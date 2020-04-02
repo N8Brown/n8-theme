@@ -1,0 +1,597 @@
+/* 
+Theme Name: N8
+Author: Nathan Brown
+Version: 1.0
+*/
+
+/* VARIABLES */
+
+:root {
+  --main-grey: #efefef;
+  --main-blue: #24369b;
+  --main-black: #272727;
+}
+
+/* WORDPRESS THEME STYLES */
+
+/* blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 450px;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    background:#ececec;
+}
+ 
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: #7a7a7a;
+}
+ 
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+  
+blockquote cite:before {
+    content: "\2014 \2009";
+} */
+
+
+.logo img {
+  width: 160px;
+}
+
+.menu-item a {
+  color: var(--main-grey);
+  text-transform: uppercase;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.page-title {
+  text-transform: uppercase;
+}
+
+.post-nav i {
+  font-size: 1.5rem;
+}
+
+.skill-container,
+.mobile-header-item > a {
+  display: flex;
+}
+
+.skill-title {
+  /* margin-bottom: .75rem; */
+  margin-right: .5rem;
+}
+.section-title {
+  margin-bottom: 1rem;
+}
+
+main {
+  width: 100%;
+}
+
+/* TEXT */
+
+.mobile-header,
+.side-nav,
+.nav:link,
+.nav:visited,
+.nav:hover,
+.nav:active,
+.tooltip .tooltiptext {
+  color: var(--main-grey);
+}
+
+.wpforms-submit {
+  background-color: var(--main-blue) !important;
+  color: var(--main-grey) !important; 
+}
+
+.wpforms-field-label,
+.wpforms-required-label {
+  color: var(--main-blue) !important;
+}
+
+h3,
+.post-box a,
+.blue-span,
+.link:link,
+.link:visited,
+.link:hover,
+.link:active {
+  color: var(--main-blue);
+}
+
+.category > a,
+.category-icon:link,
+.category-icon:visited,
+.category-icon:hover,
+.category-icon:active,
+.contact-links:link,
+.contact-links:visited,
+.contact-links:hover,
+.contact-links:active {
+  color: var(--main-black);
+}
+
+.side-nav,
+.tooltip {
+  text-align: center;
+}
+
+.nav-links {
+  font-size: 1.5em;
+}
+
+.nav-links > li {
+  text-decoration: none;
+}
+
+.project-links {
+  font-size: 1.25rem;
+}
+
+.full-post-link,
+.full-page-link {
+  font-size: 1.25rem;
+}
+
+#resume {
+  font-size: 1rem;
+}
+
+/* DISPLAY */
+
+.sfsi_Sicons span,
+.side-nav {
+  display: none;
+}
+
+body,
+.contact-box,
+.container-header,
+.nav-links,
+.project-details,
+.section {
+  display: flex;
+}
+
+.side-nav,
+.nav-links,
+.section,
+.skill-container,
+.project-details {
+  flex-direction: column;
+}
+
+.side-nav,
+.section {
+  justify-content: center;
+}
+
+.container-header {
+  justify-content: space-between;
+}
+
+.screenshot {
+  align-self: flex-start;
+}
+
+.screenshot img {
+  box-shadow: 1px 3px 5px  #808080;
+}
+
+/* MARGINS */
+
+.contact,
+.project-links {
+  margin-right: 1rem;
+}
+
+.main-skills-section {
+  margin-bottom: 1.15rem;
+}
+
+.about {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  margin-left: 1rem;
+}
+
+.contact,
+.project-nav {
+  margin-top: 1rem;
+}
+
+.contact,
+.project-title,
+.section-container,
+#experience p,
+#experience ul,
+#interests p,
+#skills h3 {
+  margin-bottom: 1rem;
+}
+
+#experience li {
+  margin-left: 2rem;
+}
+
+#experience li p {
+  margin-bottom: 0;
+}
+
+.post-box,
+.project-box {
+  margin-bottom: 4rem;
+}
+
+.post-box p {
+    margin-bottom: 1rem;
+}
+
+
+/* GENERAL STYLING */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: var(--main-black);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.signature {
+    font-family: "Rock Salt", sans-serif;
+    font-size: 1.5rem;
+}
+/* MAIN */
+
+main {
+  background: var(--main-grey);
+  padding-top: 5rem;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 1.5rem;
+  padding-top: 5rem;
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+}
+
+/* ABOUT */
+
+.contact:hover {
+  transform: scale(1.15);
+}
+
+/* TOOL TIP */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 70px;
+  background-color: var(--main-black);
+  padding: 2px 0;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+  top: 105%;
+  left: 50%;
+  margin-left: -35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* PROJECTS */
+
+.project-details {
+  align-items: center;
+}
+
+.project-screenshot {
+  width: 200px;
+  box-shadow: 1px 3px 5px 	#808080;
+}
+
+/* MOBILE NAVBAR */
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 3.25rem;
+  top: 0;
+  left: 0;
+  background: var(--main-blue);
+}
+
+.mobile-header-item {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.mobile-header-item i {
+  font-size: 2rem;
+}
+
+.mobile-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: var(--main-blue);
+  text-align: center;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.mobile-nav a {
+  font-size: 2rem;
+  line-height: 1.4;
+  text-decoration: none;
+  color: var(--main-grey);
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile-nav a:hover {
+  color: #f1f1f1;
+}
+
+.mobile-nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+  .profile-pic {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .screenshot {
+    align-self: center;
+  }
+  .skill-container {
+    align-items: center;
+  }
+  h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+  i {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 0.85rem;
+  }
+  #resume {
+    font-size: 0.75rem;
+  }
+  .full-post-link,
+  .full-page-link {
+    font-size: 1rem;
+  }
+  .mobile-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .tooltip {
+    width: 40px;
+  }
+  .full-page-link,
+  .project-title,
+  .project-nav {
+    text-align: center;
+  }
+  .container-header {
+    flex-wrap: wrap;
+  }
+  .skill {
+    font-size: 1.5rem;
+  }
+  .title {
+    margin-right: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .profile-pic {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  i {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .mobile-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .skill {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .tooltip {
+    width: 60px;
+  }
+  .tooltip i {
+    font-size: 2.5rem;
+  }
+  .project-details {
+    flex-direction: row;
+  }
+  .project-title {
+    text-align: left;
+  }
+  textarea {
+    max-width: 60%;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+  .side-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 12rem;
+    background: var(--main-blue);
+  }
+  .profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
+  main {
+    padding-top: 0;
+    padding-left: 12rem;
+  }
+  h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 6rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+  .project-nav {
+    text-align: left;
+  }
+  .section {
+    padding: 3rem;
+    margin-top: 0;
+  }
+  .skill {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .tooltip i {
+    font-size: 3rem;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .details {
+    max-width: 75%;
+  }
+  .post-box,
+  .project-box {
+    max-width: 80%;
+  }
+}
+  
