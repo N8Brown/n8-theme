@@ -3,7 +3,7 @@
 ?>
         <main>
             <section id="home" class="section">
-                <h2 class="section-title">NEWS</h2>
+                <h2 class="section-title">THOUGHTS</h2>
                 <?php
                     while (have_posts()) {
                         the_post();

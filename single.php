@@ -21,7 +21,7 @@
                 </div>
                 <div class="full-page-link">
                     <a class="link" href="<?php echo get_permalink(get_page_by_title('News')) ?>" >
-                        <strong>SEE ALL NEWS</strong>
+                        <strong>SEE ALL THOUGHTS</strong>
                     </a>
                 </div>
 

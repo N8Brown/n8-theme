@@ -42,7 +42,7 @@
             </section>
 
             <section id="news" class="section">
-                <h2 class="section-title">NEWS</h2>
+                <h2 class="section-title">THOUGHTS</h2>
                 <?php
                     $homepageNews = new WP_Query(array(
                         'posts_per_page' => 4
@@ -79,7 +79,7 @@
                 ?>
                 <div class="full-page-link">
                     <a class="link" href="<?php echo get_permalink(get_page_by_title('News')) ?>" >
-                        <strong>SEE ALL NEWS</strong>
+                        <strong>SEE ALL THOUGHTS</strong>
                     </a>
                 </div>
             </section>
