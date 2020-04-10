@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="full-page-link">
-                    <a class="link" href="<?php echo get_permalink(get_page_by_title('News')) ?>" >
+                    <a class="link" href="<?php echo get_permalink(get_page_by_title('Thoughts')) ?>" >
                         <strong>SEE ALL THOUGHTS</strong>
                     </a>
                 </div>
