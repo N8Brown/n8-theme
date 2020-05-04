@@ -1,9 +1,5 @@
 <?php
-/*
-Template Name: Portfolio
-Author: Nathan Brown
-Version: 1.0
- */ 
+    include("skills.php");
     get_header(); 
     while (have_posts()) {
         the_post();
@@ -11,12 +7,39 @@ Version: 1.0
         <main>
             <section id="full-portfolio" class="section">
                 <h2 class="section-title">PORTFOLIO</h2>
-                <div class="details">
+                <div class="portfolio-details">
                     <p class="about"> <?php the_content(); ?> </p>
+                </div>
+                <div > 
+                    <h3 class="skills-heading">Skills</h3>
+                    <p class="portfolio-details">I have invested a significant amount of time and energy into learning the programming languages and tools listed here, with each one building off of the last. It has been fun watching my web developer toolbox grow and I can't wait to add to it.</p>
+                    <div class="skills-programming">
+                        <h4 class="skills-heading">PROGRAMMING LANGUAGES & TOOLS </h4>
+                        <?php foreach($skills as $skill){ 
+                            if($skill["type"] == "programming"){ ?>
+                            <div class="tooltip">
+                                <img class="main-skill" src="<?php echo get_theme_file_uri($skill['icon']); ?>" alt="<?php echo $skill['name']; ?>">
+                                <span class="tooltiptext"> <?php echo $skill['name']; ?> </span>
+                            </div>
+                        <?php }} ?>
+                    </div>
+                    <div class="skills-design">
+                        <h4 class="skills-heading">DESIGN TOOLS</h4>
+                        <?php foreach($skills as $skill){ 
+                            if($skill["type"] == "design"){ ?>
+                            <div class="tooltip">
+                                <img class="main-skill" src="<?php echo get_theme_file_uri($skill['icon']); ?>" alt="<?php echo $skill['name']; ?>">
+                                <span class="tooltiptext"> <?php echo $skill['name']; ?> </span>
+                            </div>
+                        <?php }} ?>
+                    </div>
                 </div>
             </section>
             <section id="projects" class="section">
                 <h2 class="section-title">PROJECTS</h2>
+                <div class="portfolio-details">
+                    <p>I enjoy making things, especially if it requires problem solving and trying out new methods to get to the finished product. Below is a collection of projects that have challenged me and forced me to learn new things, best exemplify a particular skill set, or is simply something that I really enjoyed working on and am proud of.</p>
+                </div>
                 <?php
                     $portfolio = new WP_Query(array(
                         'post_type' => 'portfolio'

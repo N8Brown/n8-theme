@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html <?php  language_attributes(); ?>>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140800361-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-140800361-2');
+        </script>
+
         <meta charset='<?php bloginfo('charset'); ?>'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='description' content='Nathan Brown | Web developer and programmer based out of southern Maine, specializing in static and dynamic websites, landing pages, wordpress customization, and more. '>
+        <meta name='keywords' content='web developer, web development, programmer, maine, southern maine, wordpress, static, dynamic, website, webpage, landing page'>
+        <meta name='robots' content='all, index, follow'>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>

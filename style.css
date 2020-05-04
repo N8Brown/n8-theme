@@ -14,43 +14,18 @@ Version: 1.0
 
 /* WORDPRESS THEME STYLES */
 
-/* blockquote {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    font-style: italic;
-    width: 450px;
-    margin: 0.25em 0;
-    padding: 0.25em 40px;
-    line-height: 1.45;
-    position: relative;
-    color: #383838;
-    background:#ececec;
-}
- 
-blockquote:before {
-    display: block;
-    content: "\201C";
-    font-size: 80px;
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    color: #7a7a7a;
-}
- 
-blockquote cite {
-    color: #999999;
-    font-size: 14px;
-    display: block;
-    margin-top: 5px;
-}
-  
-blockquote cite:before {
-    content: "\2014 \2009";
-} */
 
+iframe {
+    max-width: 100%;
+}
 
 .logo img {
   width: 160px;
+}
+
+.main-skill {
+  width: 70px;
+  height: 40px;
 }
 
 .menu-item a {
@@ -65,6 +40,17 @@ blockquote cite:before {
 .page-title {
   text-transform: uppercase;
 }
+
+.skills-programming,
+.skills-design,
+.portfolio-details {
+  margin-bottom: 2rem;
+}
+
+h3.skills-heading,
+h4.skills-heading {
+  margin-bottom: 1rem;
+} 
 
 .post-nav i {
   font-size: 1.5rem;
@@ -586,12 +572,15 @@ main {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .details {
-    max-width: 75%;
-  }
+   /* {
+    max-width: 65%;
+  } */
+  .details,
+  .portfolio-details,
   .post-box,
-  .project-box {
-    max-width: 80%;
+  .project-box,
+  #contact .widgetizedArea {
+    max-width: 65%;
   }
 }
   
