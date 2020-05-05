@@ -1,4 +1,9 @@
 <?php
+/*
+Template Name: Portfolio
+Author: Nathan Brown
+Version: 1.0
+ */ 
     include("skills.php");
     get_header(); 
     while (have_posts()) {
@@ -12,7 +17,7 @@
                 </div>
                 <div > 
                     <h3 class="skills-heading">Skills</h3>
-                    <p class="portfolio-details">I have invested a significant amount of time and energy into learning the programming languages and tools listed here, with each one building off of the last. It has been fun watching my web developer toolbox grow and I can't wait to add to it.</p>
+                    <p class="portfolio-details">I currently use Visual Studio Code as my primary text editor and I generally use the MAMP stack for my development projects. If I am working on something Wordpress related though, I tend to use Local by Flywheel. In addition to these, below are the primary tools and languages that I work with.</p>
                     <div class="skills-programming">
                         <h4 class="skills-heading">PROGRAMMING LANGUAGES & TOOLS </h4>
                         <?php foreach($skills as $skill){ 
@@ -62,7 +67,7 @@
                                                 foreach((get_the_category()) as $mySkill){ ?>
                                                     <div class="tooltip">
                                                         <a class="category-icon" href="<?php echo get_category_link(get_cat_ID($mySkill->cat_name)); ?>">
-                                                            <i class="fab fa-<?php echo $mySkill->slug ?> skill"></i>
+                                                            <img class="main-skill" src="<?php echo get_theme_file_uri('icons/'.$mySkill->slug.'.svg'); ?>" alt="<?php echo $mySkill->name ?>">
                                                         </a>
                                                         <span class="tooltiptext"> <?php echo $mySkill->name ?> </span>
                                                     </div>

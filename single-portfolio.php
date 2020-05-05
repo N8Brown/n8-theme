@@ -19,7 +19,7 @@
                     <?php foreach((get_the_category()) as $mySkill){ ?>
                         <div class="tooltip">
                             <a class="category-icon" href="<?php echo get_category_link(get_cat_ID($mySkill->cat_name)); ?>">
-                                <i class="fab fa-<?php echo $mySkill->slug ?> skill"></i>
+                                <img class="main-skill" src="<?php echo get_theme_file_uri('icons/'.$mySkill->slug.'.svg'); ?>" alt="<?php echo $mySkill->name ?>">
                             </a>
                             <span class="tooltiptext"> <?php echo $mySkill->name ?> </span>
                         </div>

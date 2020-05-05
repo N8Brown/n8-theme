@@ -24,7 +24,8 @@ iframe {
 }
 
 .main-skill {
-  width: 70px;
+  opacity: .85;
+  width: 60px;
   height: 40px;
 }
 
@@ -186,7 +187,14 @@ body,
 
 /* MARGINS */
 
-.contact,
+.contact {
+  margin-right: .5rem;
+  margin-left: -1rem;
+  width: 70px;
+  height: 50px;
+}
+
+
 .project-links {
   margin-right: 1rem;
 }
@@ -436,6 +444,10 @@ main {
   }
   .tooltip {
     width: 40px;
+  }
+  .main-skill {
+    width: 40px;
+    height: 30px;
   }
   .full-page-link,
   .project-title,
